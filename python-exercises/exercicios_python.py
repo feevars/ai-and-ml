@@ -60,3 +60,31 @@ print('a média entre {:.1f} e {:.1f} é igual a {:.1f}'.format(nota1, nota2, (n
 # Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
 valor = float(input('Digite um valor em metros: '))
 print('O valor {}m em centímetros é {:.1f}cm e em milímetros é {:.1f}mm'.format(valor, valor*100, valor*1000))
+
+# === Desafio 009 ===
+# Tabuada
+# Escreva um programa que leia um número e exiba a tabuada para este número
+valor = int(input('Digite um número: '))
+print('-------------------------------')
+for tabuada in range(1,11):
+    print('{:2} x {:2} = {}'.format(tabuada, valor, valor*tabuada))
+print('-------------------------------')
+
+# === Desafio 010 ===
+# Conversor de Moedas
+# Crie um programaque leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar.
+# Considere US$1.00 = R$5,03
+valor = float(input('Digite quantos reais você possui na carteira: R$'))
+real = 5.03
+print('com R${:.2f} você consegue comprar US${:.2f}'.format(valor, valor/real))
+
+# === Desafio 011 ===
+# Pintando parede
+# Faça um programa que leia a largura e a altura de uma parede em metros, calcule a sua área e a quantidade de tinta
+# necessária para pintá-la, sabendo que cada litro de tinta pinta uma área de 2m².
+altura = float(input('Digite a altura da parede em metros: '))
+largura = float(input('Digite a largura da parede em metros: '))
+area = altura * largura
+capacidade_tinta = area/2
+print('Sua parede tem a dimensão de {:.2f}x{:.2f}. Sua área é de {:.2f}m²'.format(altura, largura, area))
+print('Para pintar essa parede, você precisará de {:.2f}l de tinta.'.format(capacidade_tinta))
