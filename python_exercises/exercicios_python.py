@@ -41,6 +41,7 @@ print('O sucessor é {} e o antecessor é {}'.format(numero-1, numero+1))
 # === Desafio 006 ===
 # Dobro, Triplo, Raiz Quadrada
 # Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.
+from itertools import count
 import math
 numero = int(input('Digite um número'))
 print('O dobro é ',numero*2)
@@ -88,3 +89,10 @@ area = altura * largura
 capacidade_tinta = area/2
 print('Sua parede tem a dimensão de {:.2f}x{:.2f}. Sua área é de {:.2f}m²'.format(altura, largura, area))
 print('Para pintar essa parede, você precisará de {:.2f}l de tinta.'.format(capacidade_tinta))
+
+# === Desafio 012 ===
+# Calculando descontos
+# Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
+preco_produto = float(input('Digite o preço do produto em reais: R$'))
+desconto_aplicado = preco_produto-(preco_produto*0.05)
+print('O produto de valor R${:.2f} com 5%` de desconto ficará no valor de R${:.2f}.'.format(preco_produto, desconto_aplicado))
