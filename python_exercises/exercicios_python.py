@@ -96,3 +96,26 @@ print('Para pintar essa parede, você precisará de {:.2f}l de tinta.'.format(ca
 preco_produto = float(input('Digite o preço do produto em reais: R$'))
 desconto_aplicado = preco_produto-(preco_produto*0.05)
 print('O produto de valor R${:.2f} com 5%` de desconto ficará no valor de R${:.2f}.'.format(preco_produto, desconto_aplicado))
+
+# === Desafio 013 ===
+# Reajuste salarial
+# Faça um algoritmo que leia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.
+salario_antigo = float(input('Digite o preço do produto em reais: R$'))
+salario_atualizado = salario_antigo+(salario_antigo*0.15)
+print('O salário era de R${:.2f}. Com 15% de aumento passará para R${:.2f}.'.format(salario_antigo, salario_atualizado))
+
+# === Desafio 014 ===
+# Conversor de temperatura
+# Escreva um programa que receba uma temperatura digitada em ºC e converta para ºF.
+temperatura_celsius = float(input('Digite a temperatura mínima de hoje em °C:'))
+temperatura_fahrenheit = (temperatura_celsius * (9/5)) + 32
+print('A temperatura {}°C, convertida para Fahrenheit, é {}°C.'.format(temperatura_celsius, temperatura_fahrenheit))
+
+# === Desafio 015 ===
+# Aluguel de Carros
+# Escreva um programa que pergunte a quantidade de Km percorridos por um carro alugado e a quantidade de dias
+# pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0,15 por Km rodado.
+quilometragem = float(input('Digite o número de Kms rodados:'))
+dias_aluguel = int(input('Digite o número de dias de aluguel do veículo:'))
+valor_final = quilometragem * 0.15 + dias_aluguel*60
+print('O preço final a se pagar é R${:.2f}'.format(valor_final))
